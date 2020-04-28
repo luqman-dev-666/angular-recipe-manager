@@ -10,15 +10,15 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 })
 export class RecipeDetailComponent implements OnInit {
 
-  dropdown = false;
+  // dropdown = false;
   id: number;
   recipe: Recipe;
 
   constructor(private recipeService: RecipeService, private route: ActivatedRoute, private router: Router) { }
 
-  dropdownToggle(){
-    this.dropdown = !this.dropdown;
-  }
+  // dropdownToggle(){
+  //   this.dropdown = !this.dropdown;
+  // }
 
   ngOnInit(): void {
     this.route.params.subscribe(
