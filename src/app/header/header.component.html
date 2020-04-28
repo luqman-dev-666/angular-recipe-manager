@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="cursor: pointer">Recipe Book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" style="cursor: pointer" routerLink="/recipes">Recipes</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" style="cursor: pointer" routerLink="/shopping-list">Shopping List</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-5 dropdown">
+          <!-- <a
+          type="button"
+          (click) = "dropdownToggle()"
+          class="nav-link dropdown-toggle" 
+          id="navbarDropdownMenuLink" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false">
+            Manage
+          </a> -->
+          <a
+          type="button"
+          class="nav-link dropdown-toggle" 
+          id="navbarDropdownMenuLink" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false">
+            Manage
+          </a>
+          <!-- <div 
+          class="dropdown-menu" 
+          aria-labelledby="navbarDropdownMenuLink"
+          [ngClass]="{show: dropdown}"
+          > -->
+          <div 
+          class="dropdown-menu" 
+          aria-labelledby="navbarDropdownMenuLink"
+          >
+            <a class="dropdown-item" style="cursor: pointer" (click) = "onSaveData()">Save Data</a>
+            <a class="dropdown-item" style="cursor: pointer" (click) = "onFetchData()">Fetch Data</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
